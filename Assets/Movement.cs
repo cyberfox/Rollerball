@@ -16,16 +16,16 @@ public class Movement : MonoBehaviour {
 		if (Input.GetKey("space")) {
 			rb.AddForce((float)0.0f, (float)0.4f, (float)0.0f, ForceMode.Impulse);
 		}
-		if (Input.GetKey("left")) {
+		if (Input.GetKey("left") || Input.GetKey("a")) {
 			rb.AddForce((float)-0.3f, (float)0.0f, (float)0.0f, ForceMode.Impulse);
 		}
-		if (Input.GetKey("right")) {
+		if (Input.GetKey("right") || Input.GetKey("d")) {
 			rb.AddForce((float)0.3f, (float)0.0f, (float)0.0f, ForceMode.Impulse);
 		}
-		if (Input.GetKey("up")) {
+		if (Input.GetKey("up") || Input.GetKey("w")) {
 			rb.AddForce((float)0.0f, (float)0.0f, (float)0.3f, ForceMode.Impulse);
 		}
-		if (Input.GetKey("down")) {
+		if (Input.GetKey("down") || Input.GetKey("s")) {
 			rb.AddForce((float)0.0f, (float)0.0f, (float)-0.3f, ForceMode.Impulse);
 		}
 	}
